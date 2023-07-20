@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Image Gallery Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3>visit: https://image-gallery-react-01.netlify.app</h3>
+<div align="center"> <img alt="alt_text" src="./gallery.gif"/> </div>
 
-## Available Scripts
+## Description:
 
-In the project directory, you can run:
+This is an Image Gallery web application built using React. It displays a collection of images with information about the photographers. The application utilizes the provided `data` array containing image information.
 
-### `yarn start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Gallery Component (Gallery.js):** This functional component is responsible for rendering the image gallery on the web page. It maps over the `data` array and displays each image along with the photographer's name.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Image Container Styling (styles/style.css):** The CSS file contains styles for the image gallery. It sets up the layout, positioning, and visual effects for the images.
 
-### `yarn test`
+  - The `image-item` class defines the container for each image. It sets a fixed height and width, and the images overflow is hidden to ensure consistent image sizes.
+  - The images are scaled to fit the container using the `object-fit: cover` property.
+  - Hovering over an image scales it up with a smooth transition effect.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **App Component (App.js):** The `App` component is the main component of the application. It renders the overall layout of the web page.
 
-### `yarn build`
+- **Main Layout Styling (styles/style.css):** The CSS file sets styles for the main layout of the web page.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  - The `h1` element has a SteelBlue color, centered alignment, and margin adjustments for spacing.
+  - The `image-container` class is used to create a flexbox layout to display the images in a responsive grid.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. The `Gallery` component receives image data from the `data` array and renders the images along with the photographer's name.
+2. The `App` component imports the `Gallery` component and displays the image gallery on the web page.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Image Data
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The `data` array contains image information, including the photographer's name and the URL of the large image.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Each image is displayed in the `image-item` container with a smooth hover effect. The `info-name` class provides styling for the photographer's name.
 
-## Learn More
+## Screenshots
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+_[You may include some screenshots of your web application here, showcasing its functionality and design.]_
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Installation
 
-### Code Splitting
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Run `npm install` to install the necessary dependencies.
+4. Run `npm start` to start the development server and view the application in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributing
 
-### Analyzing the Bundle Size
+Contributions are welcome! If you find any bugs or want to suggest new features, please open an issue or create a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
